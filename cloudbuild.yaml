@@ -6,7 +6,7 @@ steps:
     args:
       - '-c'
       - |
-        docker build -t node-app -f dockerfile .
+        docker build -t node-app -f Dockerfile .
         # docker tag node-app asia-south1-docker.pkg.dev/niveus-gcp-training-1/prathijna-imag/node-app:latest
         # docker push asia-south1-docker.pkg.dev/niveus-gcp-training-1/prathijna-imag/node-app:latest
   - name: 'gcr.io/cloud-builders/gcloud'
